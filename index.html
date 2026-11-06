@@ -17,10 +17,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#241A1C; --ink-2:#4A3D40; --muted:#7A6B6E;
-  --cream:#FBF5EC; --paper:#FFFDF8; --sand:#F1E6D6;
-  --coral:#FF6A4D; --coral-deep:#E2492C;
-  --butter:#FFD45E; --sky:#8FD0FF; --lilac:#CDB8FF; --mint:#9BE3C3; --pink:#FFB4C8;
+  --ink:#24143B; --ink-2:#4B3C63; --muted:#756A87;
+  --cream:#F5F0FF; --paper:#FFFFFF; --sand:#E9DFF9;
+  --coral:#8053D6; --coral-deep:#6133B4;
+  --butter:#D8C0FF; --sky:#D1C5FF; --lilac:#B89AF1; --mint:#D9CFF9; --pink:#E7CBFF;
   --r:26px; --line:2px solid var(--ink);
   --pop:6px 6px 0 var(--ink);
   --ease:cubic-bezier(.22,1,.36,1);
@@ -78,10 +78,10 @@ a{color:inherit}
 .fact{padding:16px 16px 14px;border:var(--line);border-radius:18px;background:var(--paper)}
 .fact b{display:block;font-family:Unbounded;font-size:21px;line-height:1.1;margin-bottom:6px}
 .fact span{font-size:14px;color:var(--ink-2);line-height:1.35;display:block}
-.fact:nth-child(1) b{color:var(--coral)} .fact:nth-child(2) b{color:#2C8FD6} .fact:nth-child(3) b{color:#8A5CF5}
+.fact:nth-child(1) b{color:var(--coral)} .fact:nth-child(2) b{color:#7C5AD8} .fact:nth-child(3) b{color:#9A6FF0}
 
 .stage{position:relative;height:640px}
-.stage__blob{position:absolute;left:50%;top:54%;width:430px;height:430px;transform:translate(-50%,-50%);border:var(--line);border-radius:58% 42% 52% 48%/48% 56% 44% 52%;background:radial-gradient(circle at 30% 30%,#FFE59C,var(--butter) 55%,#FFC23D);box-shadow:var(--pop);animation:morph 12s ease-in-out infinite}
+.stage__blob{position:absolute;left:50%;top:54%;width:430px;height:430px;transform:translate(-50%,-50%);border:var(--line);border-radius:58% 42% 52% 48%/48% 56% 44% 52%;background:radial-gradient(circle at 30% 30%,#EBDFFF,var(--butter) 55%,#B892F3);box-shadow:var(--pop);animation:morph 12s ease-in-out infinite}
 @keyframes morph{50%{border-radius:44% 56% 40% 60%/58% 42% 58% 42%}}
 .stage__ring{position:absolute;left:50%;top:54%;width:530px;height:530px;transform:translate(-50%,-50%);border:2px dashed rgba(36,26,28,.35);border-radius:50%;animation:spin 60s linear infinite}
 @keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
@@ -148,7 +148,7 @@ section{position:relative}
 .sum p b{color:var(--coral-deep)}
 
 /* мир */
-.world{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;padding:60px;border:var(--line);border-radius:40px;background:linear-gradient(135deg,#DDF1FF,#EFE6FF);box-shadow:var(--pop);overflow:hidden;position:relative}
+.world{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;padding:60px;border:var(--line);border-radius:40px;background:linear-gradient(135deg,#EDE5FF,#E8DBFF);box-shadow:var(--pop);overflow:hidden;position:relative}
 .world h2{font-size:clamp(28px,3.6vw,46px);margin:18px 0 18px}
 .world p{font-size:18px;color:var(--ink-2)}
 .ticks{list-style:none;margin-top:26px;display:grid;gap:14px}
@@ -156,7 +156,7 @@ section{position:relative}
 .ticks li svg{flex:none;width:26px;height:26px;padding:4px;border:var(--line);border-radius:50%;background:var(--mint)}
 .bubbles{position:relative;height:420px}
 .screen{position:absolute;left:50%;top:50%;width:230px;height:400px;transform:translate(-50%,-50%);border:var(--line);border-radius:34px;background:var(--ink);padding:10px;box-shadow:var(--pop)}
-.screen__in{height:100%;border-radius:26px;overflow:hidden;position:relative;background:linear-gradient(180deg,#FFE7A8,#FFC9B9)}
+.screen__in{height:100%;border-radius:26px;overflow:hidden;position:relative;background:linear-gradient(180deg,#EEE1FF,#CBB4FA)}
 .toon{position:absolute;inset:0;width:100%;height:100%}
 .toon__mouth{transform-box:fill-box;transform-origin:center;animation:talk .32s ease-in-out infinite alternate}
 @keyframes talk{from{transform:scaleY(.25)}to{transform:scaleY(1.1)}}
@@ -184,7 +184,7 @@ section{position:relative}
 .nope p strong{color:#fff;display:block;font-size:18px;margin-bottom:2px}
 
 /* для кого */
-.mom{display:grid;grid-template-columns:auto 1fr;gap:30px;align-items:center;padding:36px 40px;border:var(--line);border-radius:32px;background:linear-gradient(135deg,#FFE7DF,#FFF3D6);box-shadow:var(--pop);margin-bottom:22px}
+.mom{display:grid;grid-template-columns:auto 1fr;gap:30px;align-items:center;padding:36px 40px;border:var(--line);border-radius:32px;background:linear-gradient(135deg,#ECE2FF,#EEE4FF);box-shadow:var(--pop);margin-bottom:22px}
 .mom .ico{width:96px;height:96px;border-radius:50%;margin:0;background:var(--coral);color:#fff}
 .mom .ico svg{width:44px;height:44px}
 .mom h3{font-family:Unbounded;font-size:clamp(21px,2.4vw,28px);line-height:1.2;margin-bottom:12px}
@@ -200,7 +200,7 @@ section{position:relative}
 /* наугад / по системе */
 .vs{display:grid;grid-template-columns:1fr 1fr;gap:22px}
 .vs__col{border:var(--line);border-radius:30px;padding:30px 30px 34px;background:var(--paper)}
-.vs__col.good{background:#EAFBF2;box-shadow:var(--pop)}
+.vs__col.good{background:#ECE7FC;box-shadow:var(--pop)}
 .vs__col h3{font-family:Unbounded;font-size:20px;margin-bottom:20px;display:flex;align-items:center;gap:12px}
 .vs__col h3 i{display:grid;place-items:center;width:38px;height:38px;border:var(--line);border-radius:50%}
 .vs__col h3 i svg{width:16px;height:16px}
@@ -209,7 +209,7 @@ section{position:relative}
 .vs li{display:flex;gap:12px;font-size:16px;line-height:1.45}
 .vs li::before{flex:none;font-weight:800;width:20px}
 .vs .bad li{color:var(--muted)} .vs .bad li::before{content:"✕";color:var(--coral)}
-.vs .good li{font-weight:600} .vs .good li::before{content:"✓";color:#1E9E62}
+.vs .good li{font-weight:600} .vs .good li::before{content:"✓";color:#6541B0}
 
 /* программа */
 .prog{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
@@ -262,8 +262,8 @@ section{position:relative}
 .honest p{font-size:18px;color:var(--ink-2)}
 .calc{display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:center;margin:28px 0}
 .calc div{padding:22px;border:var(--line);border-radius:22px;text-align:center}
-.calc div:first-child{background:#EAFBF2}
-.calc div:last-child{background:#FFF1D6}
+.calc div:first-child{background:#ECE7FC}
+.calc div:last-child{background:#F1E9FF}
 .calc b{display:block;font-family:Unbounded;font-size:clamp(24px,3vw,34px);line-height:1.1}
 .calc span{display:block;font-size:14px;font-weight:700;color:var(--muted);margin-top:6px}
 .calc i{font-family:Unbounded;font-style:normal;font-weight:800;font-size:30px;color:var(--coral)}
@@ -271,8 +271,8 @@ section{position:relative}
 /* покупка */
 .cta{position:relative;margin:0 16px;padding:72px 24px;border-radius:44px;background:var(--coral);border:var(--line);overflow:hidden;text-align:center;color:#fff}
 .cta h2{font-size:clamp(30px,4.6vw,58px);max-width:900px;margin:14px auto 22px;color:#fff}
-.cta>p{font-size:19px;max-width:620px;margin:0 auto 30px;color:#FFEDE7}
-.cta__note{color:#FFE59C;font-size:30px;display:inline-block;transform:rotate(-3deg)}
+.cta>p{font-size:19px;max-width:620px;margin:0 auto 30px;color:#F9F2FF}
+.cta__note{color:#EBDFFF;font-size:30px;display:inline-block;transform:rotate(-3deg)}
 .get{position:relative;z-index:2;max-width:560px;margin:0 auto 34px;padding:26px 28px;border:var(--line);border-radius:26px;background:var(--paper);color:var(--ink);text-align:left;box-shadow:var(--pop)}
 .get h4{font-family:Unbounded;font-size:17px;margin-bottom:14px}
 .get ul{list-style:none;display:grid;gap:10px}
@@ -283,7 +283,7 @@ section{position:relative}
 .get__price b{font-family:Unbounded;font-size:clamp(30px,4vw,42px);line-height:1}
 .cta .btn{background:var(--butter);color:var(--ink);font-size:18px;padding:22px 38px}
 .cta .btn:hover{background:#fff}
-.cta__small{margin-top:20px;font-size:14px;color:#FFE1D8}
+.cta__small{margin-top:20px;font-size:14px;color:#EDE2FF}
 .cta .doodle{opacity:.9}
 .buy{display:flex;align-items:center;justify-content:center;gap:22px}
 .arr{display:flex;gap:4px}
@@ -311,7 +311,7 @@ section{position:relative}
 .pay__box form{display:grid;gap:12px;text-align:left}
 .pay__email{width:100%;padding:15px 18px;border:var(--line);border-radius:14px;font:inherit;font-size:16px;background:#fff}
 .pay__email:focus{outline:3px solid var(--sky);outline-offset:1px}
-.pay__hint{margin:0!important;padding:10px 12px;border-radius:12px;background:#FFF3D6;font-size:14px!important;font-weight:600;color:var(--ink)!important}
+.pay__hint{margin:0!important;padding:10px 12px;border-radius:12px;background:#EEE4FF;font-size:14px!important;font-weight:600;color:var(--ink)!important}
 .pay__hint.hide{display:none}
 .chk{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;line-height:1.45;color:var(--ink-2);cursor:pointer}
 .chk input{flex:none;width:20px;height:20px;margin-top:1px;accent-color:var(--coral)}
@@ -451,7 +451,7 @@ footer nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-to
     <symbol id="i-palette" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><path d="M17 10.5a2.5 2.5 0 1 1 0 5M8 11a2.5 2.5 0 1 0 0 5M12 22a10 10 0 1 1 10-10c0 2-1.5 3-3 3h-2.5a2 2 0 0 0-1.5 3.3A2 2 0 0 1 12 22Z"/></g></symbol>
     <symbol id="i-pen" viewBox="0 0 24 24"><path d="m14.7 6.3 3 3L8 19H5v-3ZM16 5l3 3" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-refresh" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></g></symbol>
-    <symbol id="star" viewBox="0 0 40 40"><path d="M20 2l4.5 13.5L38 20l-13.5 4.5L20 38l-4.5-13.5L2 20l13.5-4.5Z" stroke="#241A1C" stroke-width="2.2" stroke-linejoin="round"/></symbol>
+    <symbol id="star" viewBox="0 0 40 40"><path d="M20 2l4.5 13.5L38 20l-13.5 4.5L20 38l-4.5-13.5L2 20l13.5-4.5Z" stroke="#24143B" stroke-width="2.2" stroke-linejoin="round"/></symbol>
   </defs>
 </svg>
 
@@ -500,9 +500,9 @@ footer nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-to
       <div class="sticker s1" aria-hidden="true"><i><svg><use href="#i-heart"/></svg></i><span>Один герой<small>в каждой серии</small></span></div>
       <div class="sticker s2" aria-hidden="true"><i><svg><use href="#i-globe"/></svg></i><span>Заказы<small>из разных стран</small></span></div>
       <div class="sticker s3" aria-hidden="true"><i><svg><use href="#i-film"/></svg></i><span>Мультик за вечер<small>без студии и команды</small></span></div>
-      <svg class="doodle d-star" style="right:8%;top:10%" width="46" height="46" fill="#FF6A4D"><use href="#star"/></svg>
-      <svg class="doodle d-star" style="left:16%;top:46%;animation-delay:-1.5s" width="28" height="28" fill="#8FD0FF"><use href="#star"/></svg>
-      <svg class="doodle d-star" style="right:12%;bottom:12%;animation-delay:-2.4s" width="34" height="34" fill="#CDB8FF"><use href="#star"/></svg>
+      <svg class="doodle d-star" style="right:8%;top:10%" width="46" height="46" fill="#8053D6"><use href="#star"/></svg>
+      <svg class="doodle d-star" style="left:16%;top:46%;animation-delay:-1.5s" width="28" height="28" fill="#D1C5FF"><use href="#star"/></svg>
+      <svg class="doodle d-star" style="right:12%;bottom:12%;animation-delay:-2.4s" width="34" height="34" fill="#B89AF1"><use href="#star"/></svg>
     </div>
   </div>
 
@@ -571,20 +571,20 @@ footer nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-to
           <svg class="toon" viewBox="0 0 210 380" preserveAspectRatio="xMidYMid slice">
             <defs><linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BFE6FF"/><stop offset="1" stop-color="#FFE7C2"/></linearGradient></defs>
             <rect width="210" height="380" fill="url(#sk)"/>
-            <circle cx="168" cy="52" r="20" fill="#FFD45E" stroke="#241A1C" stroke-width="2.5"/>
-            <path d="M20 70q10-12 24-4 8-10 20 0 12 0 10 10H20q-8 0 0-6Z" fill="#fff" stroke="#241A1C" stroke-width="2.5"/>
-            <path d="M-10 300q60-50 120-10t130-20v120H-10Z" fill="#9BE3C3" stroke="#241A1C" stroke-width="2.5"/>
+            <circle cx="168" cy="52" r="20" fill="#D8C0FF" stroke="#24143B" stroke-width="2.5"/>
+            <path d="M20 70q10-12 24-4 8-10 20 0 12 0 10 10H20q-8 0 0-6Z" fill="#fff" stroke="#24143B" stroke-width="2.5"/>
+            <path d="M-10 300q60-50 120-10t130-20v120H-10Z" fill="#D9CFF9" stroke="#24143B" stroke-width="2.5"/>
             <g class="toon__bear">
-              <circle cx="62" cy="140" r="22" fill="#E8A87C" stroke="#241A1C" stroke-width="3"/><circle cx="62" cy="140" r="10" fill="#FFB4C8"/>
-              <circle cx="148" cy="140" r="22" fill="#E8A87C" stroke="#241A1C" stroke-width="3"/><circle cx="148" cy="140" r="10" fill="#FFB4C8"/>
-              <path d="M50 330q0-70 55-70t55 70" fill="#FF6A4D" stroke="#241A1C" stroke-width="3"/>
-              <path d="M88 268l17 14 17-14" fill="#FFFDF8" stroke="#241A1C" stroke-width="2.5" stroke-linejoin="round"/>
-              <ellipse cx="105" cy="200" rx="62" ry="58" fill="#E8A87C" stroke="#241A1C" stroke-width="3"/>
-              <ellipse cx="105" cy="222" rx="30" ry="22" fill="#F7D3B0" stroke="#241A1C" stroke-width="2.5"/>
-              <g class="toon__eyes"><ellipse cx="82" cy="188" rx="7" ry="9" fill="#241A1C"/><ellipse cx="128" cy="188" rx="7" ry="9" fill="#241A1C"/><circle cx="84" cy="184" r="2.6" fill="#fff"/><circle cx="130" cy="184" r="2.6" fill="#fff"/></g>
-              <circle cx="66" cy="214" r="8" fill="#FF8FA8" opacity=".7"/><circle cx="144" cy="214" r="8" fill="#FF8FA8" opacity=".7"/>
-              <ellipse cx="105" cy="210" rx="8" ry="5.5" fill="#241A1C"/>
-              <ellipse class="toon__mouth" cx="105" cy="228" rx="9" ry="6" fill="#7A2230" stroke="#241A1C" stroke-width="2.5"/>
+              <circle cx="62" cy="140" r="22" fill="#B79AD2" stroke="#24143B" stroke-width="3"/><circle cx="62" cy="140" r="10" fill="#E7CBFF"/>
+              <circle cx="148" cy="140" r="22" fill="#B79AD2" stroke="#24143B" stroke-width="3"/><circle cx="148" cy="140" r="10" fill="#E7CBFF"/>
+              <path d="M50 330q0-70 55-70t55 70" fill="#8053D6" stroke="#24143B" stroke-width="3"/>
+              <path d="M88 268l17 14 17-14" fill="#FFFFFF" stroke="#24143B" stroke-width="2.5" stroke-linejoin="round"/>
+              <ellipse cx="105" cy="200" rx="62" ry="58" fill="#B79AD2" stroke="#24143B" stroke-width="3"/>
+              <ellipse cx="105" cy="222" rx="30" ry="22" fill="#F2D8F8" stroke="#24143B" stroke-width="2.5"/>
+              <g class="toon__eyes"><ellipse cx="82" cy="188" rx="7" ry="9" fill="#24143B"/><ellipse cx="128" cy="188" rx="7" ry="9" fill="#24143B"/><circle cx="84" cy="184" r="2.6" fill="#fff"/><circle cx="130" cy="184" r="2.6" fill="#fff"/></g>
+              <circle cx="66" cy="214" r="8" fill="#C4A5F5" opacity=".7"/><circle cx="144" cy="214" r="8" fill="#C4A5F5" opacity=".7"/>
+              <ellipse cx="105" cy="210" rx="8" ry="5.5" fill="#24143B"/>
+              <ellipse class="toon__mouth" cx="105" cy="228" rx="9" ry="6" fill="#552E78" stroke="#24143B" stroke-width="2.5"/>
             </g>
           </svg>
           <div class="screen__cap" id="cap">Привет! Это моя сказка</div>
@@ -778,9 +778,9 @@ footer nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-to
 
 <!-- 11. ПОКУПКА -->
 <section class="cta rv" id="kupit">
-  <svg class="doodle d-star" style="left:7%;top:10%" width="54" height="54" fill="#FFD45E"><use href="#star"/></svg>
-  <svg class="doodle d-star" style="right:9%;top:16%;animation-delay:-1.2s" width="36" height="36" fill="#8FD0FF"><use href="#star"/></svg>
-  <svg class="doodle d-star" style="left:10%;bottom:12%;animation-delay:-2.2s" width="44" height="44" fill="#FFFDF8"><use href="#star"/></svg>
+  <svg class="doodle d-star" style="left:7%;top:10%" width="54" height="54" fill="#D8C0FF"><use href="#star"/></svg>
+  <svg class="doodle d-star" style="right:9%;top:16%;animation-delay:-1.2s" width="36" height="36" fill="#D1C5FF"><use href="#star"/></svg>
+  <svg class="doodle d-star" style="left:10%;bottom:12%;animation-delay:-2.2s" width="44" height="44" fill="#FFFFFF"><use href="#star"/></svg>
   <span class="hand cta__note">твой первый мультик ближе, чем кажется</span>
   <h2 class="h">Научись создавать свои нейромультики</h2>
   <p>Все уроки, промты и майнд-карта — сразу после оплаты.</p>
