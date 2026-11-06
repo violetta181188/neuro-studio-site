@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>document.documentElement.classList.add('js')</script>
 <title>Нейромультики с Виолеттой — обучение созданию AI-мультфильмов</title>
-<meta name="description" content="Пошаговая система: как научиться делать нейромультики и выйти на доход от 5 000 ₽ в день — на заказах в России и за рубежом.">
+<meta name="description" content="Создание нейромультиков с нуля: ИИ-инструменты, постоянный персонаж, анимация и перевод на другие языки. Обучение на примере одного мультфильма.">
 <meta property="og:title" content="Нейромультики с Виолеттой">
-<meta property="og:description" content="Как научиться делать нейромультики и выйти на доход от 5 000 ₽ в день.">
+<meta property="og:description" content="Научись создавать нейромультики с нуля: от первого героя до готового ролика.">
 <meta property="og:image" content="img/violetta-desk.webp">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
@@ -410,6 +410,20 @@ footer nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-to
   *,*::before,*::after{animation:none!important;transition:none!important}
   .js .rv{opacity:1;transform:none}
 }
+
+/* Цены и примеры работ */
+.price-pair{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px 18px;margin:20px 0;font-family:Unbounded,sans-serif}
+.price-pair del{font-size:20px;color:var(--muted);font-weight:500;text-decoration-thickness:2px}
+.price-pair strong{font-size:clamp(28px,5vw,42px);color:var(--coral-deep)}
+.get__price{flex-wrap:wrap}.get__price .price-pair{margin:0}.pay__price.price-pair{gap:10px}.pay__price strong{font-size:32px}
+.examples{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
+.example{padding:22px;border:var(--line);border-radius:var(--r);background:var(--paper);box-shadow:var(--pop)}
+.example__screen{aspect-ratio:16/10;display:grid;place-items:center;text-align:center;padding:26px;border:2px dashed var(--ink);border-radius:18px;background:var(--lilac);margin-bottom:22px}
+.example__screen--ribbon{background:var(--sand);position:relative;overflow:hidden}
+.example__ribbon{width:100%;height:12px;background:var(--coral-deep);transform:rotate(-12deg);position:absolute;top:28%;left:0}
+.example__screen span{position:relative;background:var(--paper);border:var(--line);border-radius:16px;padding:14px 20px;font-weight:800}
+.example h3{font-family:Unbounded,sans-serif;font-size:19px;line-height:1.4;margin-bottom:12px}.example p{color:var(--ink-2)}
+@media(max-width:700px){.examples{grid-template-columns:1fr}.example{padding:18px}.get__price{justify-content:center}.price-pair del{font-size:18px}}
 </style>
 </head>
 <body>
@@ -465,15 +479,15 @@ footer nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-to
   <div class="wrap hero__grid">
     <div class="hero__text">
       <span class="eyebrow rv"><i></i>Нейромультики · обучение с нуля</span>
-      <h1 class="h rv" style="--d:.08s">Как научиться делать <em>нейромультики</em> и выйти на доход <span class="mk">от 5 000 ₽ в день</span></h1>
+      <h1 class="h rv" style="--d:.08s">Создавай <em>нейромультики</em> с нуля — <span class="mk">от идеи до готовой истории</span></h1>
       <p class="hero__sub rv" style="--d:.16s">Пошаговая система: от первого героя до заказов в России и за рубежом — <b>даже если ты не умеешь рисовать, не разбираешься в нейросетях и у тебя всего пара свободных часов в день.</b></p>
       <div class="hero__cta rv" style="--d:.24s">
         <a class="btn" href="#pochemu">Покажи, как это работает <svg><use href="#i-down"/></svg></a>
-        <a class="hero__price" href="#kupit" data-cta>↓ цена и доступ</a>
+        <a class="hero__price" href="#kupit" data-cta>↓ цена и доступ</a><a class="hero__price" href="#primery">Примеры работ</a>
       </div>
       <div class="facts rv" style="--d:.32s">
-        <div class="fact"><b>от 5 000 ₽</b><span>в день на заказах</span></div>
-        <div class="fact"><b>9 модулей</b><span>от нуля до первых денег</span></div>
+        <div class="fact"><b>1 мультик</b><span>весь процесс на одном примере</span></div>
+        <div class="fact"><b>9 модулей</b><span>от инструментов до готового ролика</span></div>
         <div class="fact"><b>RU·EN·ES</b><span>один мультик — разные страны</span></div>
       </div>
     </div>
@@ -482,7 +496,7 @@ footer nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-to
       <div class="stage__ring" aria-hidden="true"></div>
       <div class="stage__blob" aria-hidden="true"></div>
       <img class="stage__girl" src="img/violetta-full.webp" alt="Виолетта">
-      <div class="say"><b>Привет, я Виолетта! 👋</b><span>Научу делать мультики, за которые платят</span></div>
+      <div class="say"><b>Привет, я Виолетта! 👋</b><span>Покажу, как создать свой первый мультик</span></div>
       <div class="sticker s1" aria-hidden="true"><i><svg><use href="#i-heart"/></svg></i><span>Один герой<small>в каждой серии</small></span></div>
       <div class="sticker s2" aria-hidden="true"><i><svg><use href="#i-globe"/></svg></i><span>Заказы<small>из разных стран</small></span></div>
       <div class="sticker s3" aria-hidden="true"><i><svg><use href="#i-film"/></svg></i><span>Мультик за вечер<small>без студии и команды</small></span></div>
@@ -494,8 +508,8 @@ footer nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-to
 
   <div class="marquee" aria-hidden="true">
     <div class="marquee__track">
-      <span>Персональные мультики</span><span>Новые серии любимых героев</span><span>Реклама для брендов</span><span>Мультик-поздравление</span><span>Love story мультиком</span><span>Мультсериал в Reels</span><span>Обучающие мультики</span><span>Аккаунты на разных языках</span>
-      <span>Персональные мультики</span><span>Новые серии любимых героев</span><span>Реклама для брендов</span><span>Мультик-поздравление</span><span>Love story мультиком</span><span>Мультсериал в Reels</span><span>Обучающие мультики</span><span>Аккаунты на разных языках</span>
+      <span>Персональные мультики</span><span>Серии с собственными героями</span><span>Реклама для брендов</span><span>Мультик-поздравление</span><span>Love story мультиком</span><span>Мультсериал в Reels</span><span>Обучающие мультики</span><span>Аккаунты на разных языках</span>
+      <span>Персональные мультики</span><span>Серии с собственными героями</span><span>Реклама для брендов</span><span>Мультик-поздравление</span><span>Love story мультиком</span><span>Мультсериал в Reels</span><span>Обучающие мультики</span><span>Аккаунты на разных языках</span>
     </div>
   </div>
 </section>
@@ -506,12 +520,12 @@ footer nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-to
     <div class="sec__head rv">
       <span class="eyebrow"><i></i>Почему это деньги</span>
       <h2 class="h">Нейромультики — не детское хобби. Это <span class="mk sky">навык, за который платят</span></h2>
-      <p>Открой ленту: мультяшные ролики собирают огромные просмотры, мамы ищут сказки для детей, бренды — рекламу, которую не пролистывают. Спрос растёт, а делать красиво и стабильно умеют единицы. Поэтому за хороший мультик платят — и платят охотно.</p>
+      <p>Открой ленту: мультяшные ролики собирают огромные просмотры, родители ищут сказки для детей, бренды — рекламу, которую не пролистывают. Спрос растёт, а делать красиво и стабильно умеют единицы. Поэтому за хороший мультик платят — и платят охотно.</p>
     </div>
     <div class="why">
       <article class="card rv"><b class="n">01</b><h3>Покупают эмоции</h3><p>Родители платят за восторг ребёнка, пары — за память о свадьбе, бренды — за внимание. Эмоции не дешевеют и не выходят из моды.</p></article>
-      <article class="card rv" style="--d:.08s"><b class="n">02</b><h3>Спрос больше, чем мастеров</h3><p>Нейросетями пользуются многие, а получить из них настоящий мультик с живым героем умеют немногие. Кто умеет — того и выбирают.</p></article>
-      <article class="card rv" style="--d:.16s"><b class="n">03</b><h3>Почти без вложений</h3><p>Не нужны студия, художники и аниматоры. Ноутбук, подписки на нейросети и система — вот и всё производство.</p></article>
+      <article class="card rv" style="--d:.08s"><b class="n">02</b><h3>Навык, который можно развивать</h3><p>Работа с нейросетями — это последовательность решений: идея, персонаж, кадры, движение и звук. На курсе собираем их в один процесс.</p></article>
+      <article class="card rv" style="--d:.16s"><b class="n">03</b><h3>С понятным бюджетом</h3><p>Не нужны студия, художники и аниматоры. Ноутбук, подписки на нейросети и система — вот и всё производство.</p></article>
       <article class="card rv" style="--d:.24s"><b class="n">04</b><h3>Работает в любой стране</h3><p>Мультик не привязан к языку: меняешь озвучку — и тот же ролик продаётся за рубежом.</p></article>
     </div>
     <p class="bridge rv">Хорошо, платят. А <span>за что конкретно</span>? ↓</p>
@@ -527,14 +541,14 @@ footer nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-to
       <p>Браться за всё сразу не нужно. Начни с одного-двух форматов, которые ближе тебе, остальные добавишь с опытом.</p>
     </div>
     <div class="money">
-      <article class="card wide rv"><span class="tag">Хит у мам</span><div class="ico bg-p"><svg><use href="#i-gift"/></svg></div><h3>Персональные мультики для детей</h3><p>Ребёнок становится героем сказки — со своим лицом, именем и любимой игрушкой. Такой мультик заказывают на день рождения, к Новому году или просто чтобы порадовать.</p><div class="who"><svg><use href="#i-people"/></svg>Покупают мамы, папы, бабушки, крёстные</div></article>
-      <article class="card wide rv" style="--d:.08s"><div class="ico bg-l"><svg><use href="#i-moon"/></svg></div><h3>Новые серии про любимых героев</h3><p>Маленькие фанаты пересмотрели любимый мультфильм до дыр и ждут продолжения. Ты создаёшь свои мультсериалы по мотивам известных мультиков — с собственными версиями героев: узнаваемых, но со своей внешностью. Ребёнок получает новые приключения, а родители с радостью за это платят.</p><div class="who"><svg><use href="#i-people"/></svg>Покупают родители детей — фанатов конкретных мультиков</div></article>
+      <article class="card wide rv"><span class="tag">Для всей семьи</span><div class="ico bg-p"><svg><use href="#i-gift"/></svg></div><h3>Персональные мультики для детей</h3><p>Ребёнок становится героем сказки — со своим лицом, именем и любимой игрушкой. Такой мультик заказывают на день рождения, к Новому году или просто чтобы порадовать.</p><div class="who"><svg><use href="#i-people"/></svg>Для родителей и близких ребёнка</div></article>
+      <article class="card wide rv" style="--d:.08s"><div class="ico bg-l"><svg><use href="#i-moon"/></svg></div><h3>Свои герои и новые серии</h3><p>Создавай оригинальных персонажей и придумывай для них новые приключения. Постоянный герой поможет объединить короткие истории в собственный мультсериал.</p><div class="who"><svg><use href="#i-people"/></svg>Для семейной аудитории и детских проектов</div></article>
       <article class="card rv"><div class="ico bg-b"><svg><use href="#i-party"/></svg></div><h3>Мультики к праздникам</h3><p>Love story на свадьбу, поздравление на юбилей, приглашение на детский праздник, ролик для выпускного в садике или корпоратива.</p><div class="who"><svg><use href="#i-people"/></svg>Покупают те, кто готовит праздник, ведущие, агентства</div></article>
       <article class="card rv" style="--d:.08s"><span class="tag" style="background:var(--sky)">Бренды</span><div class="ico bg-c"><svg><use href="#i-mega"/></svg></div><h3>Реклама для брендов</h3><p>Мультяшный ролик продаёт там, где обычная реклама приелась. Твой нейро-персонаж оживляет товар с маркетплейса и рекламирует его с юмором и креативом — так, что ролик хочется досмотреть.</p><div class="who"><svg><use href="#i-people"/></svg>Покупают селлеры, кафе, магазины, онлайн-школы</div></article>
       <article class="card rv" style="--d:.16s"><div class="ico bg-s"><svg><use href="#i-book"/></svg></div><h3>Обучающие мультики на заказ</h3><p>Логопеды, детские психологи, школы английского и развивающие центры ищут мультики под свою программу — чтобы разнообразить занятия и привлечь новых клиентов нестандартным подходом к обучению.</p><div class="who"><svg><use href="#i-people"/></svg>Покупают педагоги и детские центры</div></article>
       <article class="card full rv"><div class="ico bg-p"><svg><use href="#i-phone"/></svg></div><h3>Свой мульт-блог в соцсетях</h3><p>Аккаунт с мультсериалом растёт иначе, чем обычный блог: героя любят, ждут и пересылают друзьям. Дальше — реклама в аккаунте, заказы от подписчиков и свои продукты. А каждый ролик в ленте ещё и работает портфолио, которое приводит заказчиков.</p><div class="who"><svg><use href="#i-people"/></svg>Платят рекламодатели и подписчики</div></article>
     </div>
-    <div class="sum rv"><p>Одного-двух форматов хватает, чтобы выйти на <b>от 5 000 ₽ в день</b>. А если вести их ещё и на других языках, доход приходит не только из России ↓</p></div>
+    <div class="sum rv"><p>Начни с <b>одного понятного формата</b> и собери портфолио. Перевод поможет адаптировать историю для зрителей из других стран ↓</p></div>
   </div>
 </section>
 
@@ -545,7 +559,7 @@ footer nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-to
       <div>
         <span class="eyebrow"><i></i>Не только Россия</span>
         <h2 class="h">Один мультик — <span class="mk">несколько стран</span></h2>
-        <p>Героя не нужно перерисовывать. Ты меняешь озвучку и движение губ под другой язык — и тот же ролик выходит в аккаунтах на английском, испанском, португальском или немецком. Одна работа — несколько источников дохода.</p>
+        <p>Героя не нужно перерисовывать. Ты меняешь озвучку и движение губ под другой язык — и тот же ролик выходит в аккаунтах на английском, испанском, португальском или немецком. Одна история — несколько языковых версий.</p>
         <ul class="ticks">
           <li><svg><use href="#i-check"/></svg>Озвучка на другом языке — губы героя двигаются в такт речи</li>
           <li><svg><use href="#i-check"/></svg>Несколько аккаунтов параллельно — без двойной работы</li>
@@ -591,12 +605,12 @@ footer nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-to
     <div class="sec__head rv">
       <span class="eyebrow"><i></i>Спокойно</span>
       <h2 class="h">Чтобы зарабатывать на мультиках, тебе <span style="color:var(--butter)">НЕ</span> придётся</h2>
-      <p>Если в голове уже звучит «это не для меня» — вот от чего ты свободна с первого урока.</p>
+      <p>Если кажется, что это слишком сложно, посмотри, с чем помогут пошаговые уроки.</p>
     </div>
     <div class="nope">
       <div class="rv"><b><svg><use href="#i-x"/></svg></b><p><strong>Уметь рисовать</strong>Картинки и анимацию делают нейросети. Твоя задача — придумать героя и историю, а как правильно поставить задачу, я покажу.</p></div>
       <div class="rv" style="--d:.06s"><b><svg><use href="#i-x"/></svg></b><p><strong>Покупать мощный компьютер</strong>Всё работает в браузере. Хватит обычного ноутбука и интернета.</p></div>
-      <div class="rv" style="--d:.12s"><b><svg><use href="#i-x"/></svg></b><p><strong>Переплачивать за дорогие нейросети</strong>Даю связку, в которой генерация стоит копейки, — без лишних подписок.</p></div>
+      <div class="rv" style="--d:.12s"><b><svg><use href="#i-x"/></svg></b><p><strong>Переплачивать за дорогие нейросети</strong>Показываю бюджетную связку инструментов и помогаю выбрать нужные подписки.</p></div>
       <div class="rv" style="--d:.18s"><b><svg><use href="#i-x"/></svg></b><p><strong>Показывать лицо</strong>В кадре — твои герои. Можно работать полностью анонимно.</p></div>
       <div class="rv" style="--d:.24s"><b><svg><use href="#i-x"/></svg></b><p><strong>Годами учиться анимации</strong>Повторяешь шаги за мной — и собираешь первый мультик уже во время обучения.</p></div>
       <div class="rv" style="--d:.3s"><b><svg><use href="#i-x"/></svg></b><p><strong>Гадать, кому продавать</strong>Разбираем готовые форматы, где искать заказчиков и как говорить о цене.</p></div>
@@ -615,7 +629,7 @@ footer nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-to
       <div class="ico"><svg><use href="#i-spark"/></svg></div>
       <div>
         <h3>Ты начинаешь с нуля</h3>
-        <p>Не умеешь рисовать, не работала с нейросетями и не знаешь, с какой стороны подойти к анимации? Это нормальная точка старта. Обучение построено так, что ты идёшь по шагам: от настройки рабочего места до первого мультика и первых заказов.</p>
+        <p>Не умеешь рисовать, нет опыта работы с нейросетями и не знаешь, с какой стороны подойти к анимации? Это нормальная точка старта. Обучение построено так, что ты идёшь по шагам: от настройки рабочего места до первого мультика и первых заказов.</p>
         <p>Опыт не нужен — нужны ноутбук, пара свободных часов в день и желание повторять за мной.</p>
       </div>
     </div>
@@ -625,7 +639,7 @@ footer nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-to
       <div class="for__i rv" style="--d:.12s"><div class="ico bg-s"><svg><use href="#i-palette"/></svg></div><div><h4>Дизайнер, SMM-щик или монтажёр</h4><p>Новая услуга в портфолио и чек выше, чем за обычный контент.</p></div></div>
       <div class="for__i rv"><div class="ico bg-p"><svg><use href="#i-party"/></svg></div><div><h4>Ведущий или организатор праздников</h4><p>Мультик как допродажа к событию, которое ты уже делаешь.</p></div></div>
       <div class="for__i rv" style="--d:.06s"><div class="ico bg-l"><svg><use href="#i-globe"/></svg></div><div><h4>Хочешь доход не только в России</h4><p>Аккаунты на других языках и заказчики из разных стран.</p></div></div>
-      <div class="for__i rv" style="--d:.12s"><div class="ico bg-c"><svg><use href="#i-baby"/></svg></div><div><h4>Ты в декрете или скоро в него уйдёшь</h4><p>Своё дело из дома — в тихий час и вечером. А главные заказчицы — такие же мамы.</p></div></div>
+      <div class="for__i rv" style="--d:.12s"><div class="ico bg-c"><svg><use href="#i-baby"/></svg></div><div><h4>Совмещаешь творчество с семьёй и работой</h4><p>Уроки можно проходить частями и в удобное время, без привязки к расписанию.</p></div></div>
     </div>
   </div>
 </section>
@@ -635,12 +649,12 @@ footer nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-to
   <div class="wrap">
     <div class="sec__head center rv">
       <span class="eyebrow"><i></i>Честно о сложностях</span>
-      <h2 class="h">Почему у большинства не получается — <span class="mk mint">а у тебя получится</span></h2>
+      <h2 class="h">От случайных попыток — <span class="mk mint">к понятному процессу</span></h2>
       <p>Многие пробуют делать мультики сами и бросают через неделю. Дело не в таланте: у них просто нет системы.</p>
     </div>
     <div class="vs">
       <div class="vs__col bad rv">
-        <h3><i><svg><use href="#i-x"/></svg></i>Сама, наугад</h3>
+        <h3><i><svg><use href="#i-x"/></svg></i>Без плана, наугад</h3>
         <ul>
           <li>Герой «плывёт»: в каждой сцене другое лицо, другие волосы, другая одежда</li>
           <li>Картинка выглядит пластиковой, движения дёрганые</li>
@@ -654,7 +668,7 @@ footer nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-to
         <ul>
           <li>Один и тот же герой во всех сценах и сериях</li>
           <li>Живая анимация, голос и смена образов без «пластика»</li>
-          <li>Связка нейросетей, где генерация стоит копейки</li>
+          <li>Бюджетная связка нейросетей без лишних подписок</li>
           <li>Сюжет, который смотрят до последней секунды</li>
           <li>Готовые форматы и заказчики в России и за рубежом</li>
         </ul>
@@ -670,22 +684,22 @@ footer nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-to
     <div class="prog__side rv">
       <span class="eyebrow"><i></i>Программа</span>
       <h2 class="h">Внутри — <span class="mk mint">9 модулей</span></h2>
-      <p>Не теория про нейросети, а связка «открыла — повторила — получила мультик». От пустого экрана до первых заказов, шаг за шагом.</p>
+      <p>Всё обучение проходит на примере одного мультфильма: вместе открываем ИИ-инструменты, создаём постоянного персонажа, собираем сцены и озвучку. Затем разбираем, как применить этот процесс к другим форматам.</p>
       <a class="btn" href="#" data-cta>Хочу на обучение</a>
       <div class="bonus">
         <h4><svg><use href="#i-gift"/></svg>Вместе с уроками</h4>
         <ul>
           <li>Готовые промты из каждого урока</li>
-          <li>Мастер-система: сценарии и промты за минуты</li>
+          <li>Система подготовки сценариев и промтов</li>
           <li>Майнд-карта всего пути в удобном формате</li>
         </ul>
       </div>
     </div>
 
     <div class="mods">
-      <details class="mod rv" open><summary><span class="mod__n">00</span><h3>Доступ к инструментам<small>Связка, в которой генерация стоит копейки, — пока другие переплачивают за дорогие сервисы</small></h3><span class="plus"><svg><use href="#i-plus"/></svg></span></summary>
+      <details class="mod rv" open><summary><span class="mod__n">00</span><h3>Доступ к инструментам<small>Доступ к ИИ-сервисам и бюджетная связка для изображений, анимации и озвучки</small></h3><span class="plus"><svg><use href="#i-plus"/></svg></span></summary>
         <div class="mod__body"><ul><li>Какие нейросети нужны для картинок, видео и озвучки</li><li>Как открыть их из России и настроить рабочее место</li><li>Какие подписки брать, чтобы не переплачивать</li></ul></div></details>
-      <details class="mod rv"><summary><span class="mod__n">01</span><h3>Первый нейромультик<small>Почему одни ролики набирают огромные просмотры, а другие тонут — и как сразу попасть в первые</small></h3><span class="plus"><svg><use href="#i-plus"/></svg></span></summary>
+      <details class="mod rv"><summary><span class="mod__n">01</span><h3>Первый нейромультик<small>Выбираем идею и создаём первые сцены учебного мультфильма</small></h3><span class="plus"><svg><use href="#i-plus"/></svg></span></summary>
         <div class="mod__body"><ul><li>Что отличает качественный мультик от «нейро-каши»</li><li>Стиль и настроение: каким будет твой мир</li><li>Твой первый герой и первая сцена</li></ul></div></details>
       <details class="mod mod--fire rv"><summary><span class="mod__n">02</span><h3>Герой, который не меняется<small>Главный секрет качества: одно лицо в каждой сцене и каждой серии. Именно на этом спотыкается большинство</small></h3><span class="plus"><svg><use href="#i-plus"/></svg></span></summary>
         <div class="mod__body"><ul><li>Лист персонажа и референсы — основа всей серии</li><li>Промты, при которых лицо, причёска и одежда остаются теми же</li><li>Как вести одного героя через десятки серий</li></ul></div></details>
@@ -693,14 +707,37 @@ footer nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-to
         <div class="mod__body"><ul><li>Анимация, которая выглядит живой</li><li>Голос и озвучка: герой говорит естественно</li><li>Переодевания и новые локации без потери персонажа</li></ul></div></details>
       <details class="mod rv"><summary><span class="mod__n">04</span><h3>Сюжет, который досматривают<small>Как зацепить зрителя с первого кадра и удержать до финала</small></h3><span class="plus"><svg><use href="#i-plus"/></svg></span></summary>
         <div class="mod__body"><ul><li>Сценарий серии по готовой системе</li><li>Начало, после которого ролик не пролистывают</li><li>Как из отдельных сцен собрать историю, которую ждут</li></ul></div></details>
-      <details class="mod mod--fire rv"><summary><span class="mod__n">05</span><h3>Мультик, который продаёт<small>Заказы от мам и брендов: как упаковать услугу и назвать цену без стеснения</small></h3><span class="plus"><svg><use href="#i-plus"/></svg></span></summary>
+      <details class="mod mod--fire rv"><summary><span class="mod__n">05</span><h3>Мультик, который продаёт<small>Реклама товаров и персональные истории: от задачи до готового ролика</small></h3><span class="plus"><svg><use href="#i-plus"/></svg></span></summary>
         <div class="mod__body"><ul><li>Персональный мультик под заказ: от фото ребёнка до готовой сказки</li><li>Встраиваем реальный товар в мультик — формат, за который платят бренды</li><li>Где искать заказчиков и как говорить о цене</li></ul></div></details>
-      <details class="mod rv"><summary><span class="mod__n">06</span><h3>Другие языки и зарубежный рынок<small>Один мультик — аккаунты в разных странах и доход в валюте</small></h3><span class="plus"><svg><use href="#i-plus"/></svg></span></summary>
+      <details class="mod rv"><summary><span class="mod__n">06</span><h3>Другие языки и зарубежный рынок<small>Переводим наш мультфильм и адаптируем озвучку для другой аудитории</small></h3><span class="plus"><svg><use href="#i-plus"/></svg></span></summary>
         <div class="mod__body"><ul><li>Озвучка на другом языке и движение губ под новую речь</li><li>Несколько аккаунтов на разных языках параллельно</li><li>Как выйти на заказчиков за пределами России</li></ul></div></details>
-      <details class="mod rv"><summary><span class="mod__n">07</span><h3>Форматы, которые уже залетают<small>Как находить чужие хиты и делать свои ещё лучше — чтобы идеи не заканчивались</small></h3><span class="plus"><svg><use href="#i-plus"/></svg></span></summary>
-        <div class="mod__body"><ul><li>Как находить сильных конкурентов в своей теме</li><li>Как разбирать чужие хиты и забирать работающие форматы</li><li>Чтобы никогда не сидеть с вопросом «о чём снять серию»</li></ul></div></details>
-      <details class="mod rv"><summary><span class="mod__n">08</span><h3>Разбор ошибок<small>Ошибки, на которых новички теряют недели, — чтобы ты их не повторяла</small></h3><span class="plus"><svg><use href="#i-plus"/></svg></span></summary>
+      <details class="mod rv"><summary><span class="mod__n">07</span><h3>Популярные форматы<small>Разбираем короткие истории, рекламные ролики и запуск страницы в соцсетях</small></h3><span class="plus"><svg><use href="#i-plus"/></svg></span></summary>
+        <div class="mod__body"><ul><li>Как находить сильных конкурентов в своей теме</li><li>Как анализировать популярные ролики и создавать собственные идеи</li><li>Чтобы никогда не сидеть с вопросом «о чём снять серию»</li></ul></div></details>
+      <details class="mod rv"><summary><span class="mod__n">08</span><h3>Разбор ошибок<small>Проверяем персонажа, движение, звук и монтаж на примере нашего мультфильма</small></h3><span class="plus"><svg><use href="#i-plus"/></svg></span></summary>
         <div class="mod__body"><ul><li>Самые частые ошибки на реальных примерах</li><li>Как увидеть их до публикации и исправить</li></ul></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- Примеры: видео будут добавлены после получения файлов -->
+<section class="sec" id="primery">
+  <div class="wrap">
+    <div class="sec__head rv">
+      <span class="eyebrow"><i></i>Примеры работ</span>
+      <h2 class="h">От идеи — <span class="mk sky">к своей истории</span></h2>
+      <p>Здесь появятся два примера нейромультиков. Видеофайлы пока не добавлены.</p>
+    </div>
+    <div class="examples">
+      <article class="example rv">
+        <div class="example__screen example__screen--ribbon"><div class="example__ribbon" aria-hidden="true"></div><span>Место для видео<br>Запуск Instagram-страницы</span></div>
+        <h3>Открытие страницы с красной лентой</h3>
+        <p>Место для ролика о запуске Instagram-страницы с красной лентой. Видео будет доступно после загрузки.</p>
+      </article>
+      <article class="example rv">
+        <div class="example__screen"><span>Место для видео<br>Нейромультик с постоянным героем</span></div>
+        <h3>Один герой — цельная история</h3>
+        <p>Место для второго примера нейромультика. Видео и описание работы будут добавлены после получения файла.</p>
+      </article>
     </div>
   </div>
 </section>
@@ -731,14 +768,10 @@ footer nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-to
   <div class="wrap">
     <div class="honest rv">
       <span class="eyebrow"><i></i>Простая арифметика</span>
-      <h2 class="h">Обучение стоит меньше одного дня работы</h2>
-      <p>Работа на заказах может приносить от 5 000 ₽ в день. А моя система обучения стоит 3 490 ₽.</p>
-      <div class="calc">
-        <div><b>от 5 000 ₽</b><span>один день на заказах</span></div>
-        <i>&gt;</i>
-        <div><b>3 490 ₽</b><span>вся система обучения</span></div>
-      </div>
-      <p>Я специально сделала цену доступной: чтобы ты могла начать прямо сейчас, без долгих сборов, сделать первые мультики и своими глазами увидеть, что навык работает.</p>
+      <h2 class="h">Один курс — весь путь создания мультфильма</h2>
+      <p>Доступ к урокам, промтам и майнд-карте — за 3 490 ₽. Расходы на сторонние ИИ-сервисы планируй отдельно.</p>
+      <div class="price-pair"><del aria-label="Старая цена">5 999 ₽</del><strong aria-label="Действующая цена">3 490 ₽</strong></div>
+      <p>Начни с учебного мультфильма и двигайся в своём темпе. Уроки помогут разобраться в процессе и собрать собственную историю.</p>
     </div>
   </div>
 </section>
@@ -749,19 +782,19 @@ footer nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-to
   <svg class="doodle d-star" style="right:9%;top:16%;animation-delay:-1.2s" width="36" height="36" fill="#8FD0FF"><use href="#star"/></svg>
   <svg class="doodle d-star" style="left:10%;bottom:12%;animation-delay:-2.2s" width="44" height="44" fill="#FFFDF8"><use href="#star"/></svg>
   <span class="hand cta__note">твой первый мультик ближе, чем кажется</span>
-  <h2 class="h">Научись делать нейромультики, за которые платят</h2>
+  <h2 class="h">Научись создавать свои нейромультики</h2>
   <p>Все уроки, промты и майнд-карта — сразу после оплаты.</p>
   <div class="get">
     <h4>Что ты забираешь</h4>
     <ul>
-      <li>9 модулей — от настройки до первых заказов</li>
+      <li>9 модулей — весь процесс на одном мультфильме</li>
       <li>Технология героя, который не меняется от серии к серии</li>
       <li>6 способов заработка — в России и за рубежом</li>
       <li>Готовые промты из каждого урока</li>
       <li>Мастер-система для сценариев и промтов</li>
       <li>Майнд-карта всего пути в удобном формате</li>
     </ul>
-    <div class="get__price"><span>Вся система</span><b>3 490 ₽</b></div>
+    <div class="get__price"><span>Вся система</span><div class="price-pair"><del aria-label="Старая цена">5 999 ₽</del><b aria-label="Действующая цена">3 490 ₽</b></div></div>
   </div>
   <div class="buy">
     <span class="arr arr--l" aria-hidden="true"><i></i><i></i><i></i></span>
@@ -780,7 +813,7 @@ footer nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-to
     </div>
     <div class="faq">
       <details class="rv"><summary>Я не умею рисовать. Получится?<span class="plus"><svg><use href="#i-plus"/></svg></span></summary><p>Да. Рисовать не нужно — картинки и анимацию делают нейросети. Твоя задача — придумать героя и историю и правильно поставить задачу. Этому и учу.</p></details>
-      <details class="rv"><summary>У меня маленький ребёнок и мало времени. Успею?<span class="plus"><svg><use href="#i-plus"/></svg></span></summary><p>Да. Уроки можно смотреть когда удобно и в своём темпе: в тихий час, вечером, по частям. Когда герой и система готовы, короткая серия для соцсетей собирается за вечер.</p></details>
+      <details class="rv"><summary>У меня маленький ребёнок и мало времени. Успею?<span class="plus"><svg><use href="#i-plus"/></svg></span></summary><p>Да. Уроки можно смотреть когда удобно и в своём темпе: в тихий час, вечером, по частям. К каждому этапу можно возвращаться и повторять его в своём темпе.</p></details>
       <details class="rv"><summary>Нужен ли мощный компьютер?<span class="plus"><svg><use href="#i-plus"/></svg></span></summary><p>Нет. Всё работает в браузере, хватит обычного ноутбука и стабильного интернета.</p></details>
       <details class="rv"><summary>Работает ли это из России?<span class="plus"><svg><use href="#i-plus"/></svg></span></summary><p>Да. В первом же модуле показываю, как открыть нужные сервисы и настроить рабочее место.</p></details>
       <details class="rv"><summary>Сколько придётся тратить на нейросети?<span class="plus"><svg><use href="#i-plus"/></svg></span></summary><p>Покажу связку, в которой генерация обходится дёшево, и объясню, какие подписки действительно нужны, а за какие платить не стоит.</p></details>
@@ -804,14 +837,14 @@ footer nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-to
   <div class="pay__box">
     <button class="pay__x" type="button" data-pay-close aria-label="Закрыть">×</button>
     <h3 id="pay-t">Оплата обучения</h3>
-    <div class="pay__price">3 490 ₽</div>
+    <div class="pay__price price-pair"><del aria-label="Старая цена">5 999 ₽</del><strong aria-label="Действующая цена">3 490 ₽</strong></div>
     <p>Оплата и доступ — через Telegram-бота: он пришлёт ссылку на оплату, а после оплаты сразу впустит в закрытый канал с уроками.</p>
     <form id="pay-form" novalidate>
       <p class="pay__hint" id="pay-hint">☝️ Поставь галочку согласия с офертой и обработкой данных, чтобы появилась возможность оплатить покупку</p>
       <label class="chk"><input type="checkbox" id="consent-pd"><span>Принимаю <a href="oferta.html" target="_blank" rel="noopener">оферту</a> и даю <a href="soglasie.html" target="_blank" rel="noopener">согласие на обработку персональных данных</a> в соответствии с <a href="politika.html" target="_blank" rel="noopener">политикой</a></span></label>
       <button class="btn" type="submit" id="pay-go" disabled>Перейти к оплате · 3 490 ₽</button>
     </form>
-    <div class="pay__note" id="pay-note">Оплата подключается — совсем скоро здесь можно будет купить обучение.</div>
+    <div class="pay__note" id="pay-note">Если переход к оплате недоступен, попробуй ещё раз позже.</div>
   </div>
 </div>
 
